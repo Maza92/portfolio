@@ -1,0 +1,18 @@
+---
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+---
+
+<nav
+  class="bg-background text-on-background p-4 flex justify-between items-center"
+>
+  <h1 class="font-bold text-2xl">My Website</h1>
+  <ul class="flex space-x-4">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <div class="flex items-center space-x-4">
+    <div>Es</div>
+    <ThemeSwitcher />
+  </div>
+</nav>

@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button id="theme-switcher" aria-label="Cambiar tema">
+  <Icon name="dark" class="icon-dark w-4 h-4 hidden" alt="Dark Mode" />
+  <Icon name="light" class="icon-light w-4 h-4 block" alt="Light Mode" />
+</button>
+
+<style is:global>
+  [data-theme="dark"] .icon-light {
+    display: none;
+  }
+  [data-theme="dark"] .icon-dark {
+    display: block;
+  }
+</style>
+
+<script>
+  const themeSwitcher = document.getElementById("theme-switcher");
+
+  themeSwitcher.addEventListener("click", () => {
+    const html = document.documentElement;
+    if (html.hasAttribute("data-theme")) {
+      html.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+    } else {
+      html.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+</script>

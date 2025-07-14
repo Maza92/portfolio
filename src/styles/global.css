@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@import "./theme.css";
+
+body {
+  @apply bg-background text-on-background;
+  color: var(--on-background);
+  antialiased: auto;
+  font-family: "Open Sans", sans-serif;
+}
