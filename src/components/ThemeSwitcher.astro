@@ -2,9 +2,13 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<button id="theme-switcher" aria-label="Cambiar tema">
-  <Icon name="dark" class="icon-dark w-4 h-4 hidden" alt="Dark Mode" />
-  <Icon name="light" class="icon-light w-4 h-4 block" alt="Light Mode" />
+<button
+  id="theme-switcher"
+  aria-label="Cambiar tema"
+  class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container-low text-on-background hover:bg-surface-container-high transition-colors cursor-pointer"
+>
+  <Icon name="dark" class="icon-dark w-4 h-4 hidden" />
+  <Icon name="light" class="icon-light w-4 h-4 block" />
 </button>
 
 <style is:global>

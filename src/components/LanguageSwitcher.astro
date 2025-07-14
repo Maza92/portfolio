@@ -1,0 +1,45 @@
+---
+import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslatedPath } from "../i18n/utils";
+import { Icon } from "astro-icon/components";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<div class="custom-select-container relative">
+  <button
+    id="language-switcher-button"
+    aria-label="Cambiar idioma"
+    class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container-low text-on-background hover:bg-surface-container-high transition-colors cursor-pointer"
+  >
+    <Icon name="lang" class="w-4 h-4" />
+  </button>
+  <select
+    id="language-select"
+    onchange="window.location.href = this.value"
+    class="absolute opacity-0 pointer-events-none"
+  >
+    {
+      Object.entries(languages).map(([langCode, label]) => (
+        <option
+          value={translatePath("/", langCode)}
+          selected={langCode === lang}
+        >
+          {label}
+        </option>
+      ))
+    }
+  </select>
+</div>
+
+<script client:idle>
+  const button = document.getElementById("language-switcher-button");
+  const select = document.getElementById("language-select");
+
+  if (button && select) {
+    button.addEventListener("click", () => {
+      select.showPicker();
+    });
+  }
+</script>
