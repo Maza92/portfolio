@@ -1,0 +1,24 @@
+---
+import ProjectDetail from "@components/ProjectDetail.astro";
+import { projectsStaticData } from "@data/projectsData";
+import { useTranslations } from "@i18n/utils";
+import DetailHeaderLayout from "@layouts/DetailHeaderLayout.astro";
+import "@styles/global.css";
+
+export async function getStaticPaths() {
+  return Object.keys(projectsStaticData).map((id) => ({
+    params: { id },
+  }));
+}
+
+const { id } = Astro.params;
+const t = useTranslations(Astro.currentLocale as "en" | "es");
+
+if (!id) {
+  return Astro.redirect("/404");
+}
+---
+
+<DetailHeaderLayout title={t("website.title")}>
+  <ProjectDetail id={id} />
+</DetailHeaderLayout>
