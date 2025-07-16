@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Skill {
+  name: string;
+  icon: string;
+  category: "primary" | "secondary";
+}
+
+interface Props {
+  title: string;
+  skills: Skill[];
+}
+
+const { title, skills } = Astro.props;
+---
+
+<div class="fade-in-up">
+  <h3 class="text-2xl font-bold mb-6 text-primary">{title}</h3>
+  <div class="flex flex-wrap gap-4">
+    {
+      skills.map((skill) => (
+        <div
+          class={`flex gap-2 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-on-surface/20 px-6 py-3 bg-surface rounded-full border ${
+            skill.category === "primary"
+              ? "border-primary/30"
+              : "border-secondary/30"
+          }`}
+        >
+          {skill.icon && <Icon name={skill.icon} class="w-6 h-6" />}
+          <span
+            class={`font-medium ${
+              skill.category === "primary" ? "text-primary" : "text-secondary"
+            }`}
+          >
+            {skill.name}
+          </span>
+        </div>
+      ))
+    }
+  </div>
+</div>
