@@ -21,16 +21,22 @@ import { Icon } from "astro-icon/components";
 </style>
 
 <script>
-  const themeSwitcher = document.getElementById("theme-switcher");
+  function initializeThemeSwitcher() {
+    const themeSwitcher = document.getElementById("theme-switcher");
 
-  themeSwitcher.addEventListener("click", () => {
-    const html = document.documentElement;
-    if (html.hasAttribute("data-theme")) {
-      html.removeAttribute("data-theme");
-      localStorage.setItem("theme", "light");
-    } else {
-      html.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
+    if (themeSwitcher) {
+      themeSwitcher.addEventListener("click", () => {
+        const html = document.documentElement;
+        if (html.hasAttribute("data-theme")) {
+          html.removeAttribute("data-theme");
+          localStorage.setItem("theme", "light");
+        } else {
+          html.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
     }
-  });
+  }
+
+  document.addEventListener("astro:page-load", initializeThemeSwitcher);
 </script>

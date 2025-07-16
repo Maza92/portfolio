@@ -5,6 +5,18 @@ import { Icon } from "astro-icon/components";
 
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
+
+function getCurrentPath(url: URL, currentLang: string) {
+  const pathSegments = url.pathname.split("/").filter(Boolean);
+
+  if (pathSegments[0] && pathSegments[0] in languages) {
+    pathSegments.shift();
+  }
+
+  return "/" + pathSegments.join("/");
+}
+
+const currentPath = getCurrentPath(Astro.url, lang);
 ---
 
 <div class="custom-select-container relative">
@@ -23,7 +35,7 @@ const translatePath = useTranslatedPath(lang);
     {
       Object.entries(languages).map(([langCode, label]) => (
         <option
-          value={translatePath("/", langCode)}
+          value={`/${langCode}${currentPath}`}
           selected={langCode === lang}
         >
           {label}
@@ -34,12 +46,16 @@ const translatePath = useTranslatedPath(lang);
 </div>
 
 <script client:idle>
-  const button = document.getElementById("language-switcher-button");
-  const select = document.getElementById("language-select");
+  function initializeLanguageSwitcher() {
+    const button = document.getElementById("language-switcher-button");
+    const select = document.getElementById("language-select");
 
-  if (button && select) {
-    button.addEventListener("click", () => {
-      select.showPicker();
-    });
+    if (button && select) {
+      button.addEventListener("click", () => {
+        select.showPicker();
+      });
+    }
   }
+
+  document.addEventListener("astro:page-load", initializeLanguageSwitcher);
 </script>

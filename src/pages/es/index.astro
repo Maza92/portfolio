@@ -1,9 +1,11 @@
 ---
 import Welcome from "@components/Welcome.astro";
+import { useTranslations } from "@i18n/utils";
+import FloatHeaderLayout from "@layouts/FloatHeaderLayout.astro";
 import "@styles/global.css";
-import Layout from "@layouts/Layout.astro";
+const t = useTranslations(Astro.currentLocale as "en" | "es");
 ---
 
-<Layout>
+<FloatHeaderLayout title={t("website.title")}>
   <Welcome />
-</Layout>
+</FloatHeaderLayout>

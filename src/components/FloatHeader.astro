@@ -1,0 +1,19 @@
+---
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import { useTranslations } from "../i18n/utils";
+
+const homeLink = `/${Astro.currentLocale}/`;
+const projectsLink = `/${Astro.currentLocale}/projects/`;
+const t = useTranslations(Astro.currentLocale as "en" | "es");
+---
+
+<nav
+  transition:name="main-header"
+  class="fixed top-4 right-4 z-50 bg-surface-container-low/80 backdrop-blur-md text-on-background px-4 py-3 rounded-full border border-surface-container-high shadow-lg"
+>
+  <div class="flex items-center justify-center gap-3">
+    <ThemeSwitcher />
+    <LanguageSwitcher />
+  </div>
+</nav>

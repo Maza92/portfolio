@@ -77,13 +77,13 @@
   --background: rgb(19 19 24);
   --on-background: rgb(228 225 233);
   --surface: rgb(19 19 24);
-  --on-surface: rgb(228 225 233);
+  --on-surface: rgb(84 90 146);
   --surface-variant: rgb(70 70 79);
   --on-surface-variant: rgb(199 197 208);
   --outline: rgb(145 144 154);
   --outline-variant: rgb(70 70 79);
   --shadow: rgb(0 0 0);
-  --scrim: rgb(0 0 0);
+  --scrim: rgb(228 225 233);
   --inverse-surface: rgb(228 225 233);
   --inverse-on-surface: rgb(48 48 54);
   --inverse-primary: rgb(84 90 146);

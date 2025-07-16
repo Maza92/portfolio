@@ -8,3 +8,70 @@ body {
   antialiased: auto;
   font-family: "Open Sans", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    var(--color-on-tertiary-container) 0%,
+    var(--color-primary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-opacity-80 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+  @apply px-8 py-3 border-2 rounded-full font-medium transition-all;
+}
+
+.button-primary {
+  @apply bg-primary border-primary text-on-primary hover:scale-105;
+}
+
+.button-secondary {
+  @apply bg-secondary border-secondary text-on-secondary hover:scale-105;
+}
+
+.button-outline {
+  @apply border-primary text-primary hover:bg-primary hover:text-on-primary;
+}
+
+.button-primary-disabled {
+  @apply bg-primary border-primary text-on-primary cursor-not-allowed opacity-20;
+}
