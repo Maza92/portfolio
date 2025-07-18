@@ -101,6 +101,113 @@ export const ui = {
     "project.section.gallery": "Project Gallery",
     "project.section.challenge": "Challenge",
     "project.section.solution": "Solution:",
+
+    "projects.smartservebackend.title": "Smart Serve Backend",
+    "projects.smartservebackend.description":
+      "Restaurant management system with Spring Boot featuring POS, inventory, and real-time kitchen operations",
+
+    "project.smartservebackend.title": "Smart Serve Backend",
+    "project.smartservebackend.subtitle":
+      "Restaurant Management System Backend",
+    "project.smartservebackend.description":
+      "Comprehensive restaurant management system with Spring Boot and Java 21.",
+    "project.smartservebackend.longDescription":
+      "I developed a comprehensive restaurant management system using Spring Boot 3 and Java 21. This system provides a complete point-of-sale (POS) solution with integrated inventory management, real-time kitchen operations, financial reporting, and staff performance analytics. The backend handles everything from order management and cash register operations to inventory control and business intelligence, all with real-time WebSocket integration for live updates across the restaurant operations.",
+    "project.smartservebackend.role": "Full Stack Developer",
+    "project.smartservebackend.timeline": "4 months",
+
+    "project.features.smartservebackend.1":
+      "Complete POS system with table assignment and order tracking",
+    "project.features.smartservebackend.2":
+      "Real-time kitchen operations with WebSocket integration",
+    "project.features.smartservebackend.3":
+      "Advanced inventory system with recipe-based stock management",
+    "project.features.smartservebackend.4":
+      "Cash register management with session control and audit trail",
+    "project.features.smartservebackend.5":
+      "Business intelligence with sales analytics and performance metrics",
+    "project.features.smartservebackend.6":
+      "Role-based access control with JWT authentication",
+    "project.features.smartservebackend.7":
+      "Multi-language support (English/Spanish)",
+    "project.features.smartservebackend.8":
+      "Real-time dashboard with cached data and live updates",
+    "project.features.smartservebackend.9":
+      "Automatic inventory deduction based on recipes",
+    "project.features.smartservebackend.10":
+      "Financial reporting with payment method analysis",
+    "project.features.smartservebackend.11":
+      "Staff performance tracking and efficiency metrics",
+    "project.features.smartservebackend.12":
+      "REST API documentation with Swagger UI",
+
+    "project.challenges.smartservebackend.1":
+      "Design a scalable architecture handling real-time operations across multiple restaurant roles simultaneously",
+    "project.challenges.smartservebackend.2":
+      "Implement complex inventory management with recipe-based automatic deductions and unit conversions",
+    "project.challenges.smartservebackend.3":
+      "Create real-time kitchen operations with WebSocket integration while maintaining data consistency",
+
+    "project.solutions.smartservebackend.1":
+      "Implemented event-driven architecture with WebSocket integration and role-based access control, ensuring real-time updates without compromising security",
+    "project.solutions.smartservebackend.2":
+      "Developed sophisticated inventory system with JPA specifications for complex filtering, automatic stock calculations based on recipes, and real-time dashboard caching",
+    "project.solutions.smartservebackend.3":
+      "Created comprehensive kitchen workflow with STOMP protocol for real-time communication, state management for order progression, and automatic inventory updates",
+
+    // Smart Serve Frontend
+    "projects.smartservefrontend.title": "Smart Serve Frontend",
+    "projects.smartservefrontend.description":
+      "Modern Angular 19 restaurant interface with real-time updates, mobile-first design, and multi-role support",
+
+    "project.smartservefrontend.title": "Smart Serve Frontend",
+    "project.smartservefrontend.subtitle":
+      "Restaurant Management Frontend Application",
+    "project.smartservefrontend.description":
+      "Modern responsive web application built with Angular 19 for restaurant management.",
+    "project.smartservefrontend.longDescription":
+      "I built a modern, responsive web application using Angular 19 that provides a comprehensive restaurant management interface. Designed for multi-role usage (Admin, Cashier, Waiter, Cook, Baker), it offers real-time updates, intuitive workflows, and mobile-first design optimized for restaurant operations. The application includes complete POS functionality, real-time kitchen operations, inventory management, and business analytics, all integrated with WebSocket for live updates and Capacitor for native mobile capabilities.",
+    "project.smartservefrontend.role": "Frontend Developer",
+    "project.smartservefrontend.timeline": "3 months",
+
+    "project.features.smartservefrontend.1":
+      "Multi-role interface with responsive design optimized for tablets and mobile",
+    "project.features.smartservefrontend.2":
+      "Real-time WebSocket integration for kitchen operations and inventory alerts",
+    "project.features.smartservefrontend.3":
+      "Complete POS system with order context management and table assignment",
+    "project.features.smartservefrontend.4":
+      "Mobile-first design with Capacitor integration for native capabilities",
+    "project.features.smartservefrontend.5":
+      "Interactive dashboards with ApexCharts for sales and inventory analytics",
+    "project.features.smartservefrontend.6":
+      "Kitchen module with real-time order display and status management",
+    "project.features.smartservefrontend.7":
+      "Cash register operations with session management and reconciliation",
+    "project.features.smartservefrontend.8":
+      "Inventory management with live metrics and movement tracking",
+    "project.features.smartservefrontend.9":
+      "Advanced reporting with business intelligence and performance analytics",
+    "project.features.smartservefrontend.10":
+      "JWT authentication with automatic token refresh and role-based access",
+    "project.features.smartservefrontend.11":
+      "Custom navigation system optimized for restaurant workflows",
+    "project.features.smartservefrontend.12":
+      "Persistent order state across navigation with local storage backup",
+
+    "project.challenges.smartservefrontend.1":
+      "Create a mobile-first interface that works efficiently across different restaurant roles with varying workflow requirements",
+    "project.challenges.smartservefrontend.2":
+      "Implement real-time updates across multiple modules while maintaining optimal performance and user experience",
+    "project.challenges.smartservefrontend.3":
+      "Design a persistent order management system that preserves context across complex navigation flows",
+
+    "project.solutions.smartservefrontend.1":
+      "Developed responsive design with Tailwind CSS and custom component library, implementing role-based UI rendering with Angular's powerful directive system",
+    "project.solutions.smartservefrontend.2":
+      "Integrated rx-stomp for WebSocket communication with automatic reconnection, event-driven state updates, and optimized change detection strategies",
+    "project.solutions.smartservefrontend.3":
+      "Built sophisticated order context service with BehaviorSubject state management, local storage persistence, and multi-step workflow support",
   },
   es: {
     "website.title": "Luis Maza",
@@ -196,5 +303,112 @@ export const ui = {
     "project.section.gallery": "Galería del Proyecto",
     "project.section.challenge": "Desafío",
     "project.section.solution": "Solución:",
+
+    "projects.smartservebackend.title": "Smart Serve Backend",
+    "projects.smartservebackend.description":
+      "Sistema de gestión de restaurantes con Spring Boot que incluye POS, inventario y operaciones de cocina en tiempo real",
+
+    "project.smartservebackend.title": "Smart Serve Backend",
+    "project.smartservebackend.subtitle":
+      "Sistema Backend de Gestión de Restaurantes",
+    "project.smartservebackend.description":
+      "Sistema integral de gestión de restaurantes con Spring Boot y Java 21.",
+    "project.smartservebackend.longDescription":
+      "Desarrollé un sistema integral de gestión de restaurantes usando Spring Boot 3 y Java 21. Este sistema proporciona una solución completa de punto de venta (POS) con gestión integrada de inventario, operaciones de cocina en tiempo real, reportes financieros y análisis de rendimiento del personal. El backend maneja todo desde la gestión de pedidos y operaciones de caja registradora hasta control de inventario e inteligencia de negocio, todo con integración WebSocket en tiempo real para actualizaciones en vivo a través de las operaciones del restaurante.",
+    "project.smartservebackend.role": "Desarrollador Full Stack",
+    "project.smartservebackend.timeline": "4 meses",
+
+    "project.features.smartservebackend.1":
+      "Sistema POS completo con asignación de mesas y seguimiento de pedidos",
+    "project.features.smartservebackend.2":
+      "Operaciones de cocina en tiempo real con integración WebSocket",
+    "project.features.smartservebackend.3":
+      "Sistema de inventario avanzado con gestión de stock basada en recetas",
+    "project.features.smartservebackend.4":
+      "Gestión de caja registradora con control de sesiones y pista de auditoría",
+    "project.features.smartservebackend.5":
+      "Inteligencia de negocio con análisis de ventas y métricas de rendimiento",
+    "project.features.smartservebackend.6":
+      "Control de acceso basado en roles con autenticación JWT",
+    "project.features.smartservebackend.7":
+      "Soporte multiidioma (inglés/español)",
+    "project.features.smartservebackend.8":
+      "Dashboard en tiempo real con datos en caché y actualizaciones en vivo",
+    "project.features.smartservebackend.9":
+      "Deducción automática de inventario basada en recetas",
+    "project.features.smartservebackend.10":
+      "Reportes financieros con análisis de métodos de pago",
+    "project.features.smartservebackend.11":
+      "Seguimiento de rendimiento del personal y métricas de eficiencia",
+    "project.features.smartservebackend.12":
+      "Documentación de API REST con interfaz Swagger",
+
+    "project.challenges.smartservebackend.1":
+      "Diseñar una arquitectura escalable que maneje operaciones en tiempo real a través de múltiples roles de restaurante simultáneamente",
+    "project.challenges.smartservebackend.2":
+      "Implementar gestión compleja de inventario con deducciones automáticas basadas en recetas y conversiones de unidades",
+    "project.challenges.smartservebackend.3":
+      "Crear operaciones de cocina en tiempo real con integración WebSocket manteniendo consistencia de datos",
+
+    "project.solutions.smartservebackend.1":
+      "Implementé arquitectura dirigida por eventos con integración WebSocket y control de acceso basado en roles, asegurando actualizaciones en tiempo real sin comprometer la seguridad",
+    "project.solutions.smartservebackend.2":
+      "Desarrollé sistema sofisticado de inventario con especificaciones JPA para filtrado complejo, cálculos automáticos de stock basados en recetas y caché de dashboard en tiempo real",
+    "project.solutions.smartservebackend.3":
+      "Creé flujo integral de cocina con protocolo STOMP para comunicación en tiempo real, gestión de estado para progresión de pedidos y actualizaciones automáticas de inventario",
+
+    // Smart Serve Frontend
+    "projects.smartservefrontend.title": "Smart Serve Frontend",
+    "projects.smartservefrontend.description":
+      "Interfaz moderna con Angular 19 para restaurantes con actualizaciones en tiempo real, diseño móvil y soporte multi-rol",
+
+    "project.smartservefrontend.title": "Smart Serve Frontend",
+    "project.smartservefrontend.subtitle":
+      "Aplicación Frontend de Gestión de Restaurantes",
+    "project.smartservefrontend.description":
+      "Aplicación web moderna y responsiva construida con Angular 19 para gestión de restaurantes.",
+    "project.smartservefrontend.longDescription":
+      "Construí una aplicación web moderna y responsiva usando Angular 19 que proporciona una interfaz integral de gestión de restaurantes. Diseñada para uso multi-rol (Admin, Cajero, Mesero, Cocinero, Panadero), ofrece actualizaciones en tiempo real, flujos intuitivos y diseño móvil optimizado para operaciones de restaurante. La aplicación incluye funcionalidad POS completa, operaciones de cocina en tiempo real, gestión de inventario y análisis de negocio, todo integrado con WebSocket para actualizaciones en vivo y Capacitor para capacidades móviles nativas.",
+    "project.smartservefrontend.role": "Desarrollador Frontend",
+    "project.smartservefrontend.timeline": "3 meses",
+
+    "project.features.smartservefrontend.1":
+      "Interfaz multi-rol con diseño responsivo optimizado para tablets y móviles",
+    "project.features.smartservefrontend.2":
+      "Integración WebSocket en tiempo real para operaciones de cocina y alertas de inventario",
+    "project.features.smartservefrontend.3":
+      "Sistema POS completo con gestión de contexto de pedidos y asignación de mesas",
+    "project.features.smartservefrontend.4":
+      "Diseño móvil con integración Capacitor para capacidades nativas",
+    "project.features.smartservefrontend.5":
+      "Dashboards interactivos con ApexCharts para análisis de ventas e inventario",
+    "project.features.smartservefrontend.6":
+      "Módulo de cocina con visualización de pedidos en tiempo real y gestión de estado",
+    "project.features.smartservefrontend.7":
+      "Operaciones de caja registradora con gestión de sesiones y reconciliación",
+    "project.features.smartservefrontend.8":
+      "Gestión de inventario con métricas en vivo y seguimiento de movimientos",
+    "project.features.smartservefrontend.9":
+      "Reportes avanzados con inteligencia de negocio y análisis de rendimiento",
+    "project.features.smartservefrontend.10":
+      "Autenticación JWT con actualización automática de tokens y acceso basado en roles",
+    "project.features.smartservefrontend.11":
+      "Sistema de navegación personalizado optimizado para flujos de restaurante",
+    "project.features.smartservefrontend.12":
+      "Estado persistente de pedidos a través de navegación con respaldo de almacenamiento local",
+
+    "project.challenges.smartservefrontend.1":
+      "Crear una interfaz móvil que funcione eficientemente a través de diferentes roles de restaurante con requerimientos de flujo variados",
+    "project.challenges.smartservefrontend.2":
+      "Implementar actualizaciones en tiempo real a través de múltiples módulos manteniendo rendimiento óptimo y experiencia de usuario",
+    "project.challenges.smartservefrontend.3":
+      "Diseñar un sistema persistente de gestión de pedidos que preserve contexto a través de flujos de navegación complejos",
+
+    "project.solutions.smartservefrontend.1":
+      "Desarrollé diseño responsivo con Tailwind CSS y biblioteca de componentes personalizada, implementando renderizado de UI basado en roles con el poderoso sistema de directivas de Angular",
+    "project.solutions.smartservefrontend.2":
+      "Integré rx-stomp para comunicación WebSocket con reconexión automática, actualizaciones de estado dirigidas por eventos y estrategias optimizadas de detección de cambios",
+    "project.solutions.smartservefrontend.3":
+      "Construí servicio sofisticado de contexto de pedidos con gestión de estado BehaviorSubject, persistencia de almacenamiento local y soporte de flujo multi-paso",
   },
 } as const;
